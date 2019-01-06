@@ -1,0 +1,18 @@
+{
+  "name": "Nepi Tomáš!",
+  "version": "1.0",
+  "description": "This extension allows to watch paid videos on www.tyzden.sk.",
+  "permissions": ["*://*.tyzden.sk/*"],
+  "icons": {
+    "16": "images/beer16.png",
+    "32": "images/beer32.png",
+    "128": "images/beer128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tyzden.sk/*"],
+      "js": ["jquery-3.3.1.min.js", "content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
